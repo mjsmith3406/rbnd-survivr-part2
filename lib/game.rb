@@ -1,8 +1,13 @@
 class Game
-  attr_accessor 
+  attr_accessor :tribes, :name, :members
 
-  def initialize
-
+  def initialize(name, members)
+    @name = name
+    @members = members
+    @tribes = []
   end
 
+  def add_tribe
+    
+  end
 end
