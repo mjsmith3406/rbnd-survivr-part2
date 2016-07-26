@@ -1,5 +1,5 @@
 class Tribe
-  attr_accessor :members
+  attr_accessor :name, :members
 
   def initialize(tribe)
     @name = tribe[:name]
@@ -18,6 +18,6 @@ class Tribe
       end
       puts "#{selected_member} was voted off"
       @members.delete(selected_member)
-      puts selected_member
+      return selected_member
     end
 end
