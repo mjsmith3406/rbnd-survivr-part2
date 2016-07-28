@@ -12,12 +12,12 @@ class Tribe
   end
 
     def tribal_council(options={})
-      selected_member = @members.sample
-      while selected_member == options[:immune]
-        selected_member = @members.sample
+      chosen_member = @members.sample
+      while chosen_member == options[:immune]
+        chosen_member = @members.sample
       end
-      puts "#{selected_member} was voted off"
-      @members.delete(selected_member)
-      return selected_member
+      puts "#{chosen_member} was voted off"
+      @members.delete(chosen_member)
+      return chosen_member
     end
 end
