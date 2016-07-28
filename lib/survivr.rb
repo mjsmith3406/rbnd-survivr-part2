@@ -23,12 +23,10 @@ def phase_one
   8.times do
     @borneo.immunity_challenge.tribal_council
   end
+  puts "#{name} was voted off."
 end
 
 def phase_two
-  3.times do
-    @borneo.individual_immunity_challenge
-  end
 end
 
 def phase_three
