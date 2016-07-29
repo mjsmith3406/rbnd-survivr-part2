@@ -22,14 +22,14 @@ class Jury
     return @finalists
   end
 
-  def report_votes(end_votes)
-    end_votes.each do |finalist, score|
+  def report_votes(vote_results)
+    vote_results.each do |finalist, score|
       puts "#{finalist} score is #{score}"
     end
   end
 
-  def announce_winner(end_votes)
-    end_votes.max_by { |_, vote| vote }.first
+  def announce_winner(vote_results)
+    vote_results.max_by { |_, vote| vote }.first
 
   end
 end
