@@ -22,10 +22,8 @@ require 'colorizr'
 #This is where you will write your code for the three phases
 def phase_one
   8.times do
-    tribe_without_immunity = @borneo.immunity_challenge
-    puts "Tribe #{tribe_without_immunity.to_s.yellow} will be voting tonight."
-     voted_off_contestant = tribe_without_immunity.tribal_council
-     puts "#{voted_off_contestant.to_s.red} was removed."
+    voted_off = @borneo.immunity_challenge.tribal_council
+     puts "#{voted_off.to_s.red} was removed."
   end
 end
 
